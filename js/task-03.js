@@ -20,7 +20,7 @@ function createMarkup(arr) {
     .map(
       ({ url, alt }) => `
      <li>
-    <img src="${url}" alt="${alt}" width=400/>
+    <img src="${url}" alt="${alt}" width=400 />
   </li>
   `
     )

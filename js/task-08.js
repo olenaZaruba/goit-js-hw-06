@@ -7,6 +7,8 @@ function handlerSubmit(evt) {
   const { email, password } = evt.currentTarget.elements;
   if (email.value === '' || password.value === '') {
     alert('Все поля должны быть заполнены');
-  } else console.log({ Email: email.value, Password: password.value });
+    return;
+  }
+  console.log({ Email: email.value, Password: password.value });
   evt.currentTarget.reset();
 }
